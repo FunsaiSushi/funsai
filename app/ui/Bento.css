@@ -1,0 +1,57 @@
+.room {
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+  position: relative;
+  /* transform: translateX(50%) translateY(50%); */
+  transform-style: preserve-3d;
+  /* width: 50vw;
+  height: 50vh; */
+}
+
+.floor {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.wall {
+  height: 100%;
+  width: 100%;
+  max-height: 300px;
+  max-width: 400px;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform-origin: 0 100%;
+  transform: rotate3d(1, 0, 0, 90deg) translate3d(0, 300px, 300px);
+}
+
+.wall-content {
+  transform: rotate3d(1, 0, 0, 180deg); /* Flips the content back to normal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.wall:after {
+  content: "";
+  position: absolute;
+  background: red;
+}
+
+.wall.right {
+  transform: rotateX(90deg) rotateY(90deg) translate3d(-300px, 300px, 400px);
+}
+
+.tile {
+  @apply rounded-xl cursor-pointer hover:bg-emerald-400 transition-colors duration-300 ease-in-out;
+}
+
+.blogtile {
+  transform: rotate(90deg);
+}
+
+.projectLabel {
+  transform: rotateX(90deg) rotateY(90deg) translate3d(-300px, 300px, 400px);
+}
