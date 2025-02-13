@@ -3,10 +3,7 @@ import "./IronMan.css";
 export default function IronMan() {
   return (
     <div>
-      <svg
-        viewBox="-2 -2 236 342"
-        version="1.1  style={{ display: 'absolute' width: '75%', height: 'auto' }}"
-      >
+      <svg viewBox="-2 -2 236 342" version="1.1" className="ironsvg">
         <g id="Group" stroke="rgb(180,20,20)" stroke-width="2" fill="none">
           <path
             class="path"
