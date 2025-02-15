@@ -12,7 +12,7 @@ const WallLeft = () => {
             <span>projects()</span>
             <Link
               href={"/projects"}
-              className="hidden lg:flex hover:underline hover:underline-offset-8 hover:text-red-500"
+              className="hidden lg:flex hover:underline hover:underline-offset-8 hover:text-[#B41414]"
             >
               seeAll()
             </Link>
