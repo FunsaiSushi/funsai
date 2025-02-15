@@ -5,7 +5,13 @@
   left: 0;
   bottom: 0;
   right: 0;
-  width: 60%;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .ironsvg {
+    width: 70%;
+  }
 }
 
 .path {
@@ -15,6 +21,7 @@
   -moz-animation: draw 10s ease-in-out infinite;
   animation: draw 10s ease-in-out infinite;
   fill-opacity: 0;
+  stroke-width: 4;
 }
 
 @-webkit-keyframes draw {

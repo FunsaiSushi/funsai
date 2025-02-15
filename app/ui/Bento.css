@@ -1,32 +1,48 @@
 .room {
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
   position: relative;
-  /* transform: translateX(50%) translateY(50%); */
-  transform-style: preserve-3d;
+  /* width: 100%; */
   /* width: 50vw;
   height: 50vh; */
 }
 
-.floor {
-  max-height: 400px;
-  max-width: 400px;
+@media (min-width: 1024px) {
+  .room {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+    transform-style: preserve-3d;
+  }
+  .wall {
+    max-height: 300px;
+    max-width: 400px;
+    transform: rotate3d(1, 0, 0, 90deg) translate3d(0, 300px, 300px);
+  }
+  .floor {
+    max-height: 400px;
+    max-width: 400px;
+  }
+  .blogtile {
+    transform: rotate(90deg);
+  }
+  .projectLabel {
+    transform: rotateX(90deg) rotateY(90deg) translate3d(-300px, 300px, 400px);
+  }
+  .wall.right {
+    transform: rotateX(90deg) rotateY(90deg) translate3d(-300px, 300px, 400px);
+  }
+  .wall-content {
+    transform: rotate3d(1, 0, 0, 180deg);
+  }
 }
 
 .wall {
   height: 100%;
   width: 100%;
-  max-height: 300px;
-  max-width: 400px;
-  border-radius: 12px;
   top: 0;
   left: 0;
-  position: absolute;
   transform-origin: 0 100%;
-  transform: rotate3d(1, 0, 0, 90deg) translate3d(0, 300px, 300px);
+  @apply relative lg:absolute;
 }
 
 .wall-content {
-  transform: rotate3d(1, 0, 0, 180deg); /* Flips the content back to normal */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -34,30 +50,16 @@
   height: 100%;
 }
 
-.wall:after {
-  content: "";
-  position: absolute;
-  background: red;
-}
-
-.wall.right {
-  transform: rotateX(90deg) rotateY(90deg) translate3d(-300px, 300px, 400px);
-}
-
 .tile {
-  @apply rounded-xl cursor-pointer;
+  @apply border hover:bg-black bg-transparent hover:text-rose-600 p-4 font-semibold hover:underline hover:underline-offset-8;
 }
 
 .tile:hover {
   /* transform: translateY(-10px); */
   transition: transform 0.3s ease-in-out;
-  @apply shadow-lg bg-green-500;
+  @apply shadow-lg;
 }
 
-.blogtile {
-  transform: rotate(90deg);
-}
-
-.projectLabel {
-  transform: rotateX(90deg) rotateY(90deg) translate3d(-300px, 300px, 400px);
+.icon {
+  @apply text-4xl md:text-6xl;
 }

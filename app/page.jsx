@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <div>
       <Doors />
-      <div className="relative container mx-auto h-screen flex justify-center items-center max-w-6xl text-black">
+      <div className="relative container mx-auto min-h-screen flex justify-center items-center max-w-6xl">
         <div className="w-full z-10">
           <Bento />
         </div>
