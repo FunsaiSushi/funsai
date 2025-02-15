@@ -18,7 +18,7 @@ export default function BackgroundAudio({ isMuted, setIsMuted }) {
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
-      <audio ref={audioRef} autoPlay loop>
+      <audio ref={audioRef} loop>
         <source src="/stay-by-Hans.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
