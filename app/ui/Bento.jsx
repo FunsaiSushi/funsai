@@ -13,7 +13,7 @@ import BackgroundAudio from "./BackgroundAudio";
 
 const Bento = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   const handleCubeClick = () => {
     setIsModalOpen(true);

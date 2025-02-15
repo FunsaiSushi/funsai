@@ -13,7 +13,18 @@ export default function BackgroundAudio({ isMuted, setIsMuted }) {
   }, [isMuted]); // Runs whenever `isMuted` changes
 
   const toggleMute = () => {
-    setIsMuted((prev) => !prev);
+    setIsMuted((prev) => {
+      const newMutedState = !prev;
+      if (audioRef.current) {
+        audioRef.current.muted = newMutedState; // Ensure mute state updates
+        if (!newMutedState) {
+          audioRef.current
+            .play()
+            .catch((e) => console.warn("Playback error:", e));
+        }
+      }
+      return newMutedState;
+    });
   };
 
   return (
