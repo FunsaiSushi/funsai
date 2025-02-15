@@ -1,14 +1,14 @@
-import React from "react";
-import Link from "next/link";
-import AnimatedNewLogo from "../AnimatedNewLogo";
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import AnimatedNewLogo from "../AnimatedNewLogo";
 
 const WallLeft = () => {
   return (
     <div className="wall mb-10">
-      <div className="border my-2 w-full h-full">
+      <div className="my-2 w-full h-full">
         <div className="wall-content ">
-          <div className="p-4 flex w-full lg:justify-between justify-center items-center">
+          <div className="border p-4 flex w-full lg:justify-between justify-center items-center">
             <span>projects()</span>
             <Link
               href={"/projects"}
@@ -23,7 +23,7 @@ const WallLeft = () => {
                 href="https://boopclub.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col gap-2 items-center p-4 border-y border-r w-full hover:bg-black"
+                className="flex flex-col gap-2 items-center p-4 border w-full hover:bg-black hover:text-rose-500 hover:underline hover:underline-offset-8"
               >
                 <AnimatedNewLogo size={45} />
                 <div>boopclub()</div>
@@ -32,7 +32,7 @@ const WallLeft = () => {
                 href="https://kreeshee.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col gap-2 items-center p-4 w-full border-y hover:bg-black"
+                className="flex flex-col gap-2 items-center p-4 w-full border hover:bg-black hover:text-rose-500 hover:underline hover:underline-offset-8"
               >
                 <Image
                   src="/Storefren-icon.svg"
@@ -50,7 +50,7 @@ const WallLeft = () => {
                 href="https://kreeshee.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex justify-center items-center w-full border-r hover:bg-black"
+                className="flex justify-center items-center w-full border hover:bg-black hover:text-rose-500 hover:underline hover:underline-offset-8"
               >
                 <Image
                   src="/Kreeshee-logo.svg"
@@ -64,7 +64,7 @@ const WallLeft = () => {
                 href="https://kreeshee.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col gap-2 items-center justify-center py-4 w-full hover:bg-black"
+                className="flex flex-col gap-2 items-center justify-center py-4 w-full hover:bg-black border hover:text-rose-500 hover:underline hover:underline-offset-8"
               >
                 <Image
                   src="/GrassforGamers.png"
@@ -79,7 +79,7 @@ const WallLeft = () => {
           </div>
           <Link
             href={"/projects"}
-            className="w-full flex justify-center border-t py-4 lg:hidden"
+            className="w-full flex justify-center border py-4 lg:hidden hover:underline hover:underline-offset-8 hover:text-red-500"
           >
             seeAll()
           </Link>

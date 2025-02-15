@@ -1,3 +1,7 @@
+* {
+  @apply border-neutral-600 lg:border-white hover:border-rose-500;
+}
+
 .room {
   position: relative;
   /* width: 100%; */
@@ -51,7 +55,7 @@
 }
 
 .tile {
-  @apply border hover:bg-black bg-transparent hover:text-rose-600 p-4 font-semibold hover:underline hover:underline-offset-8;
+  @apply border hover:bg-black bg-transparent hover:text-rose-600 p-4 font-mono lg:font-semibold hover:underline hover:underline-offset-8;
 }
 
 .tile:hover {
@@ -62,4 +66,7 @@
 
 .icon {
   @apply text-4xl md:text-6xl;
+}
+
+.videomodal {
 }

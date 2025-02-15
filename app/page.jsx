@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import Bento from "./ui/Bento";
 import Doors from "./ui/Doors";
-import Image from "next/image";
 
 export default function Page() {
   return (

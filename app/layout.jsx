@@ -5,7 +5,7 @@ const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Funsai",
-  description: "Made with fun by me",
+  description: "Made with fun by sushipop",
 };
 
 export default function RootLayout({ children }) {

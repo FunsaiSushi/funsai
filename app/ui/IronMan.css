@@ -21,7 +21,7 @@
   -moz-animation: draw 10s ease-in-out infinite;
   animation: draw 10s ease-in-out infinite;
   fill-opacity: 0;
-  stroke-width: 4;
+  /* stroke-width: 4; */
 }
 
 @-webkit-keyframes draw {
