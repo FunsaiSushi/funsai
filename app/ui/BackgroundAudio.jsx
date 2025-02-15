@@ -35,7 +35,7 @@ export default function BackgroundAudio({ isMuted, setIsMuted }) {
       </audio>
       <button
         onClick={toggleMute}
-        className="p-2 text-neutral-500 hover:text-rose-500 lg:text-white cursor-pointer border"
+        className="p-2 text-neutral-500 hover:text-[#B41414] lg:text-white cursor-pointer border"
       >
         {isMuted ? (
           <MdOutlineVolumeMute size={24} />

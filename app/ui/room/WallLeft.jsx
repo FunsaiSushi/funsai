@@ -5,7 +5,7 @@ import AnimatedNewLogo from "../AnimatedNewLogo";
 
 const WallLeft = () => {
   return (
-    <div className="wall mb-10">
+    <div className="wall">
       <div className="my-2 w-full h-full">
         <div className="wall-content ">
           <div className="border p-4 flex w-full lg:justify-between justify-center items-center">
@@ -23,7 +23,7 @@ const WallLeft = () => {
                 href="https://boopclub.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col gap-2 items-center p-4 border w-full hover:bg-black hover:text-rose-500 hover:underline hover:underline-offset-8"
+                className="flex flex-col gap-2 items-center p-4 border w-full hover:bg-black hover:text-[#B41414] hover:underline hover:underline-offset-8"
               >
                 <AnimatedNewLogo size={45} />
                 <div>boopclub()</div>
@@ -32,7 +32,7 @@ const WallLeft = () => {
                 href="https://kreeshee.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col gap-2 items-center p-4 w-full border hover:bg-black hover:text-rose-500 hover:underline hover:underline-offset-8"
+                className="flex flex-col gap-2 items-center p-4 w-full border hover:bg-black hover:text-[#B41414] hover:underline hover:underline-offset-8"
               >
                 <Image
                   src="/Storefren-icon.svg"
@@ -50,7 +50,7 @@ const WallLeft = () => {
                 href="https://kreeshee.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex justify-center items-center w-full border hover:bg-black hover:text-rose-500 hover:underline hover:underline-offset-8"
+                className="flex justify-center items-center w-full border hover:bg-black hover:text-[#B41414] hover:underline hover:underline-offset-8"
               >
                 <Image
                   src="/Kreeshee-logo.svg"
@@ -64,7 +64,7 @@ const WallLeft = () => {
                 href="https://kreeshee.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col gap-2 items-center justify-center py-4 w-full hover:bg-black border hover:text-rose-500 hover:underline hover:underline-offset-8"
+                className="flex flex-col gap-2 items-center justify-center py-4 w-full hover:bg-black border hover:text-[#B41414] hover:underline hover:underline-offset-8"
               >
                 <Image
                   src="/GrassforGamers.png"

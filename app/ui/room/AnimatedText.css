@@ -1,0 +1,80 @@
+.animatedText {
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.animatedText span {
+  position: relative;
+}
+
+.animatedText span::before {
+  content: "heyThere:D()";
+  color: #ffffff;
+  animation: words 20s infinite;
+}
+
+.animatedText span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #000000;
+  border-left: 2px solid #ffffff;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "heyThere:D()";
+  }
+  21%,
+  40% {
+    content: "itsFunsai^^()";
+  }
+  41%,
+  60% {
+    content: "gladToHaveYouHere<3()";
+  }
+  61%,
+  80% {
+    content: "checkOutMyProjects*w*()";
+  }
+  81%,
+  100% {
+    content: "andFeelFreeToReachOut^^()";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}

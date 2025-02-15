@@ -46,15 +46,11 @@ const Floor = ({ onCubeClick }) => {
               variants={tileVariants}
               initial="hidden"
               animate="visible"
-              custom={1}
-              className="col-start-3 row-span-2 bg-black border tile"
+              custom={3}
+              className="ccol-start-3 row-span-2 tile cursor-pointer w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8"
+              onClick={() => router.push("/blog")}
             >
-              <Link
-                href="/blog"
-                className="w-full h-full flex justify-center items-center blogtile hover:underline hover:underline-offset-8"
-              >
-                blog()
-              </Link>
+              <span className="blogtile">blog()</span>
             </motion.div>
 
             {/* Socials */}
@@ -69,7 +65,7 @@ const Floor = ({ onCubeClick }) => {
                 href="https://github.com/FunsaiSushi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-rose-600"
+                className="hover:text-[#B41414]"
               >
                 <FaGithub className="icon" />
               </Link>
@@ -77,7 +73,7 @@ const Floor = ({ onCubeClick }) => {
                 href="https://twitter.com/FunsaiSushi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-rose-600"
+                className="hover:text-[#B41414]"
               >
                 <FaXTwitter className="icon" />
               </Link>
@@ -85,7 +81,7 @@ const Floor = ({ onCubeClick }) => {
                 href="https://instagram.com/funsai.sushi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-rose-600"
+                className="hover:text-[#B41414]"
               >
                 <IoLogoInstagram className="icon" />
               </Link>

@@ -2,7 +2,7 @@ import "./IronMan.css";
 
 export default function IronMan() {
   return (
-    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+    <div className="absolute inset-0 flex items-center justify-center">
       <svg viewBox="-2 -2 236 342" version="1.1" className="ironsvg">
         <g id="Group" stroke="rgb(180,20,20)" strokeWidth="4" fill="none">
           <path
