@@ -44,7 +44,7 @@ const ProjectModal = ({ project }) => {
             alt=""
             width={1000}
             height={1000}
-            className="object-cover w-fit h-auto max-h-[400px] lg:max-h-[70vh] max-w-full lg:max-w-[720px] p-1 border"
+            className="object-cover w-fit h-auto max-h-[300px] lg:max-h-[70vh] max-w-full lg:max-w-[720px] p-1 border"
           />
           <div>
             <h1 className="text-4xl">{project.fullName}</h1>
