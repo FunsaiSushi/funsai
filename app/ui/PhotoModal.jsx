@@ -10,7 +10,7 @@ const modalVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
 };
 
-const PhotoModal = ({ imageSrc }) => {
+const PhotoModal = ({ imageSrc, placeName }) => {
   const router = useRouter();
 
   const handleClose = () => {
@@ -30,13 +30,15 @@ const PhotoModal = ({ imageSrc }) => {
         className="relative max-w-4xl w-fit p-4 flex justify-center"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
       >
-        {/* Close Button */}
-        <button
-          onClick={handleClose}
-          className="absolute -bottom-12 lg:-top-12 right-4 text-neutral-400 hover:text-[#FF0000] p-2 border"
-        >
-          <IoClose size={24} />
-        </button>
+        <div className="absolute -bottom-12 lg:-top-12 flex justify-between w-full gap-2 px-4">
+          <h2>{placeName}</h2> {/* Display place name here */}
+          <button
+            onClick={handleClose}
+            className=" text-neutral-400 hover:text-[#FF0000] p-2 border w-fit h-fit"
+          >
+            <IoClose size={24} />
+          </button>
+        </div>
 
         {/* Image */}
         <Image

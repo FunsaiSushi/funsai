@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import PhotoModal from "@/app/ui/PhotoModal";
 import React from "react";
+import { galleryData } from "@/data/galleryData"; // Import galleryData
 
 const PhotoPage = () => {
   const pathname = usePathname();
@@ -15,13 +16,18 @@ const PhotoPage = () => {
 
   // Construct the correct image source path
   const imageSrc = `/gallery/${imageName}.jpeg`;
-  console.log(imageSrc);
 
-  return (
-    // <div className="z-50">
-    <PhotoModal imageSrc={imageSrc} />
-    // </div>
-  );
+  // Find the placeName corresponding to the image
+  const placeName = galleryData.find((item) =>
+    item.images.some((image) => image.includes(imageName))
+  )?.placeName;
+
+  // If no matching place name is found, fallback to a default or empty string
+  if (!placeName) {
+    return <div>Place not found</div>;
+  }
+
+  return <PhotoModal imageSrc={imageSrc} placeName={placeName} />;
 };
 
 export default PhotoPage;

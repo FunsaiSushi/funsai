@@ -5,49 +5,7 @@ import Masonry from "react-masonry-css";
 import PhotoCard from "./PhotoCard";
 import { MdHome } from "react-icons/md";
 import Link from "next/link";
-
-const cards = [
-  {
-    placeName: "Dhaka",
-    images: ["/gallery/dhaka.jpeg"],
-  },
-  {
-    placeName: "Bandarban",
-    images: ["/gallery/bandarban1.jpeg", "/gallery/bandarban2.jpeg"],
-  },
-  {
-    placeName: "Panam City",
-    images: ["/gallery/panam1.jpeg", "/gallery/panam2.jpeg"],
-  },
-  {
-    placeName: "Sonargaon",
-    images: [
-      "/gallery/sonargaon1.jpeg",
-      "/gallery/sonargaon2.jpeg",
-      "/gallery/sonargaon3.jpeg",
-      "/gallery/sonargaon4.jpeg",
-    ],
-  },
-  {
-    placeName: "Baytech Shipyard",
-    images: [
-      "/gallery/ship1.jpeg",
-      "/gallery/ship2.jpeg",
-      "/gallery/ship3.jpeg",
-      "/gallery/ship4.jpeg",
-      "/gallery/ship5.jpeg",
-      "/gallery/ship6.jpeg",
-    ],
-  },
-  {
-    placeName: "CUET Rag Concert",
-    images: [
-      "/gallery/concert1.jpeg",
-      "/gallery/concert2.jpeg",
-      "/gallery/concert3.jpeg",
-    ],
-  },
-];
+import { galleryData } from "@/data/galleryData";
 
 export default function GalleryPage() {
   return (
@@ -59,7 +17,7 @@ export default function GalleryPage() {
         >
           <MdHome size={20} />
         </Link>
-        <h2 className="text-2xl">Places I&apos;ve been to</h2>
+        <h2 className="text-lg">Places I&apos;ve been to</h2>
       </div>
 
       <Masonry
@@ -72,7 +30,7 @@ export default function GalleryPage() {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {cards.flatMap(({ placeName, images }) =>
+        {galleryData.flatMap(({ placeName, images }) =>
           images.map((src, index) => (
             <PhotoCard key={src} imageSrc={src} placeName={placeName} />
           ))

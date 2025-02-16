@@ -19,7 +19,7 @@ const ProjectModal = ({ project }) => {
   };
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-[1px] flex justify-center items-center z-50"
+      className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-[2px] flex justify-center items-center z-50"
       onClick={handleClose} // Close modal when clicking outside
     >
       <motion.div
@@ -27,13 +27,13 @@ const ProjectModal = ({ project }) => {
         initial="hidden"
         animate="visible"
         exit="hidden"
-        className="max-w-6xl w-full relative aspect-video"
+        className=" flex justify-center items-center max-w-6xl w-full relative aspect-video"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
       >
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute -bottom-12 lg:-top-16 right-2 border text-neutral-400 hover:text-[#FF0000] p-2 w-fit h-fit"
+          className="absolute -bottom-12 lg:-top-12 right-2 border text-neutral-400 hover:text-[#FF0000] p-2 w-fit h-fit"
         >
           <IoMdClose size={20} />
         </button>
@@ -46,11 +46,11 @@ const ProjectModal = ({ project }) => {
             height={1000}
             className="object-cover w-fit h-auto max-h-[300px] lg:max-h-[70vh] max-w-full lg:max-w-[720px] p-1 border"
           />
-          <div>
-            <h1 className="text-4xl">{project.fullName}</h1>
-            <p className="text-lg">{project.description}</p>
+          <div className="">
+            <h1 className="text-2xl">{project.fullName}</h1>
+            <p className="text-neutral-300">{project.description}</p>
             {/* Project Links */}
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex gap-4 text-sm">
               <Link
                 href={project.link}
                 target="_blank"
