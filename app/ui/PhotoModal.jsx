@@ -27,7 +27,7 @@ const PhotoModal = ({ imageSrc, placeName }) => {
         initial="hidden"
         animate="visible"
         exit="hidden"
-        className="relative max-w-4xl w-fit p-4 flex justify-center"
+        className="relative max-w-6xl w-fit p-4 flex justify-center"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
       >
         <div className="absolute -bottom-12 lg:-top-12 flex justify-between w-full gap-2 px-4">
