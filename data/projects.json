@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "name": "Boopclub",
+      "image": "http://localhost:3000/boopclub.jpg",
+      "description": "Boopclub is the best social media platform!"
+    },
+    {
+      "name": "Storefren",
+      "image": "http://localhost:3000/storefren.jpg",
+      "description": "Storefren is your friendly neighborhood store assistant!"
+    },
+    {
+      "name": "Kreeshee",
+      "image": "http://localhost:3000/kreeshee.jpg",
+      "description": "Kreeshee is the biggest online marketplace for fresh produce!"
+    },
+    {
+      "name": "GrassForGamers",
+      "image": "http://localhost:3000/grassforgamers.jpg",
+      "description": "GrassForGamers is a silly unfinished project of sorts, the animated background is made by me!"
+    }
+  ]
+}

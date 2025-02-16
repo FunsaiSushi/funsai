@@ -8,10 +8,11 @@ export const metadata = {
   description: "Made with fun by sushipop",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, project }) {
   return (
     <html lang="en">
       <body className={`bg-black text-white px-2 ${sourceCodePro.className}`}>
+        {project}
         {children}
       </body>
     </html>

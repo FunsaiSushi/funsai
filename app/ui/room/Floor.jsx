@@ -46,7 +46,7 @@ const Floor = ({ onCubeClick }) => {
               variants={tileVariants}
               initial="hidden"
               animate="visible"
-              custom={3}
+              custom={2}
               className="ccol-start-3 row-span-2 tile cursor-pointer w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8"
               onClick={() => router.push("/blog")}
             >
@@ -58,14 +58,14 @@ const Floor = ({ onCubeClick }) => {
               variants={tileVariants}
               initial="hidden"
               animate="visible"
-              custom={2}
+              custom={3}
               className="col-start-2 col-span-2 row-start-3 border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black"
             >
               <Link
                 href="https://github.com/FunsaiSushi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#B41414]"
+                className="hover:text-[#FF0000]"
               >
                 <FaGithub className="icon" />
               </Link>
@@ -73,7 +73,7 @@ const Floor = ({ onCubeClick }) => {
                 href="https://twitter.com/FunsaiSushi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#B41414]"
+                className="hover:text-[#FF0000]"
               >
                 <FaXTwitter className="icon" />
               </Link>
@@ -81,7 +81,7 @@ const Floor = ({ onCubeClick }) => {
                 href="https://instagram.com/funsai.sushi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#B41414]"
+                className="hover:text-[#FF0000]"
               >
                 <IoLogoInstagram className="icon" />
               </Link>
@@ -92,7 +92,7 @@ const Floor = ({ onCubeClick }) => {
               variants={tileVariants}
               initial="hidden"
               animate="visible"
-              custom={3}
+              custom={4}
               className="col-span-1 row-start-2 row-span-2 tile cursor-pointer w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8"
               onClick={() => router.push("/gallery")}
             >
@@ -101,22 +101,15 @@ const Floor = ({ onCubeClick }) => {
 
             {/* Cube */}
             <motion.button
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  opacity: 1,
-                  transition: { delay: 2, duration: 0.5 },
-                },
-              }}
+              variants={tileVariants}
               initial="hidden"
               animate="visible"
+              custom={5}
               className="relative w-full h-full col-start-2 row-start-2 tile flex justify-center items-center"
               onClick={onCubeClick}
             >
               <GrCube className="icon" />
             </motion.button>
-
-            {/* Modal */}
           </div>
         </div>
       </div>

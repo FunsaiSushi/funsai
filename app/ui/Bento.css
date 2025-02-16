@@ -1,5 +1,5 @@
 * {
-  @apply border-neutral-600 lg:border-white hover:border-[#B41414];
+  @apply border-neutral-600 lg:border-white hover:border-[#ff0000];
 }
 
 .room {
@@ -56,7 +56,7 @@
 }
 
 .tile {
-  @apply border hover:bg-black bg-transparent hover:text-[#B41414] p-4 font-mono lg:font-semibold hover:underline hover:underline-offset-8;
+  @apply border hover:bg-black bg-transparent hover:text-[#ff0000] p-4 font-mono lg:font-semibold hover:underline hover:underline-offset-8;
 }
 
 .tile:hover {
@@ -67,7 +67,4 @@
 
 .icon {
   @apply text-4xl md:text-6xl;
-}
-
-.videomodal {
 }

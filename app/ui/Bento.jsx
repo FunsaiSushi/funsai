@@ -14,10 +14,15 @@ import BackgroundAudio from "./BackgroundAudio";
 const Bento = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
+  const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
 
   const handleCubeClick = () => {
     setIsModalOpen(true);
     setIsMuted(true);
+  };
+
+  const handleProjectClick = () => {
+    setIsProjectModalOpen(true);
   };
 
   return (
@@ -31,7 +36,7 @@ const Bento = () => {
 
           <Floor onCubeClick={handleCubeClick} />
 
-          <WallLeft />
+          <WallLeft onProjectClick={handleProjectClick} />
         </div>
       </div>
       <YouTubeModal
@@ -41,7 +46,6 @@ const Bento = () => {
           setIsMuted(false); // ✅ Unmute audio when closing modal
         }}
       />
-
       <BackgroundAudio isMuted={isMuted} setIsMuted={setIsMuted} />
     </>
   );

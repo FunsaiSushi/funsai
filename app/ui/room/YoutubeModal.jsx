@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { IoMdClose } from "react-icons/io";
 
 const modalVariants = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -29,9 +30,9 @@ const YouTubeModal = ({ isOpen, onClose }) => {
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute -bottom-12 lg:-top-16 right-2 border text-neutral-400 hover:text-[#B41414] py-2 px-3 w-fit h-fit"
+          className="absolute -bottom-12 lg:-top-12 right-2 border text-neutral-400 hover:text-[#FF0000] p-2 w-fit h-fit"
         >
-          ✖
+          <IoMdClose size={20} />
         </button>
 
         {/* Embed YouTube Video */}
