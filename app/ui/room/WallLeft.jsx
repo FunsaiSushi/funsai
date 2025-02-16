@@ -47,14 +47,14 @@ const WallLeft = () => {
                 className="flex flex-col gap-2 items-center justify-center p-4 border hover:bg-black hover:text-[#ff0000] hover:underline hover:underline-offset-8"
               >
                 {index === 0 ? (
-                  <AnimatedNewLogo size={45} />
+                  <AnimatedNewLogo size={50} />
                 ) : (
                   <Image
                     src={project.logo}
                     alt={`${project.name} logo`}
                     width={200}
                     height={40}
-                    className="object-cover w-14 h-14"
+                    className="object-cover w-12 h-12"
                   />
                 )}
                 <div className="text-sm sm:text-base">{project.name}()</div>
