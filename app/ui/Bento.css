@@ -4,7 +4,7 @@
 
 .room {
   position: relative;
-  @apply sm:w-2/3 md:w-1/2 lg:w-auto;
+  @apply w-full max-w-sm lg:max-w-none sm:w-2/3 md:w-1/2 lg:w-auto;
   /* width: 50vw;
   height: 50vh; */
 }

@@ -21,19 +21,19 @@
 .door {
   width: 50%;
   height: 100%;
-  background-color: #f0e4d7; /* Light color to mimic shoji paper */
+  background-color: #000000; /* Light color to mimic shoji paper */
   position: relative;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  border: 15px solid #8b5e3c; /* Thicker outer border */
+  border: 15px solid #ff0000; /* Thicker outer border */
 }
 
 .grid-stripe {
   flex-basis: 25%;
   height: 33.33%;
   box-sizing: border-box;
-  border: 5px solid #8b5e3c;
+  border: 5px solid #ff0000;
 }
 
 .left-door {

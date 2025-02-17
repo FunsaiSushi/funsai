@@ -28,7 +28,7 @@ const Bento = () => {
 
   return (
     <>
-      <div className="relative w-full flex justify-center items-center lg:pt-64 text-base sm:text-2xl font-mono lg:font-semibold">
+      <div className="relative w-full flex justify-center items-center lg:pt-64 text-base lg:text-2xl font-mono lg:font-semibold">
         {/* StarBackground as the background layer */}
         <StarsCanvas />
 

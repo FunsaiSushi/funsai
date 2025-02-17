@@ -73,7 +73,7 @@ const Floor = ({ onCubeClick, secondLayout }) => {
                 secondLayout
                   ? "row-start-2 col-start-3 col-span-1 row-span-2 flex-col"
                   : "col-start-2 col-span-2 row-start-3"
-              } border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black lg:min-w-32`}
+              } border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black lg:min-w-[120px]`}
             >
               <Link
                 href="https://github.com/FunsaiSushi"
@@ -126,7 +126,7 @@ const Floor = ({ onCubeClick, secondLayout }) => {
               className="relative w-full h-full col-start-2 row-start-2 tile flex justify-center items-center"
               onClick={onCubeClick}
             >
-              <GrCube className="icon" />
+              <GrCube className="icon cube" />
             </motion.button>
           </div>
         </div>
