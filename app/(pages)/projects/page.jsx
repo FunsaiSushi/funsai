@@ -11,7 +11,7 @@ export const metadata = {
 
 const ProjectsPage = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-6">
       <div className="flex gap-4 items-center">
         <Link
           href={"/"}

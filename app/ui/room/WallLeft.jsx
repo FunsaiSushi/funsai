@@ -6,19 +6,19 @@ import AnimatedNewLogo from "../AnimatedNewLogo";
 const projects = [
   {
     name: "boopclub",
-    logo: "/boopclub-logo.svg",
+    logo: "/projects/boopclub-logo.svg",
   },
   {
     name: "storefren",
-    logo: "/Storefren-icon.svg",
+    logo: "/projects/Storefren-icon.svg",
   },
   {
     name: "kreeshee",
-    logo: "/kreeshee.png",
+    logo: "/projects/kreeshee.png",
   },
   {
     name: "grassForGamers",
-    logo: "/GrassforGamers.png",
+    logo: "/projects/GrassforGamers.png",
   },
 ];
 
