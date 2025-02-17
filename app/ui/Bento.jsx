@@ -14,15 +14,16 @@ import BackgroundAudio from "./BackgroundAudio";
 const Bento = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
-  const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
+  const [secondLayout, setSecondLayout] = useState(false);
 
   const handleCubeClick = () => {
     setIsModalOpen(true);
     setIsMuted(true);
   };
 
-  const handleProjectClick = () => {
-    setIsProjectModalOpen(true);
+  const handleIronClick = () => {
+    setSecondLayout(!secondLayout);
+    console.log(secondLayout);
   };
 
   return (
@@ -32,11 +33,11 @@ const Bento = () => {
         <StarsCanvas />
 
         <div className="room">
-          <WallRight />
+          <WallRight onIronClick={handleIronClick} />
 
-          <Floor onCubeClick={handleCubeClick} />
+          <Floor onCubeClick={handleCubeClick} secondLayout={secondLayout} />
 
-          <WallLeft onProjectClick={handleProjectClick} />
+          <WallLeft />
         </div>
       </div>
       <YouTubeModal

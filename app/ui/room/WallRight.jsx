@@ -2,7 +2,7 @@ import React from "react";
 import IronMan from "../IronMan";
 import "./AnimatedText.css";
 
-const WallRight = () => {
+const WallRight = ({ onIronClick }) => {
   return (
     <div className="wall right">
       <div className="border lg:border-2 lg:m-2 my-2 w-full h-full flex justify-center items-center hover:bg-black">
@@ -10,9 +10,12 @@ const WallRight = () => {
           <div className="flex w-full py-2 justify-center animatedText">
             <span></span>
           </div>
-          <div className="relative w-full h-80 sm:h-96">
+          <button
+            className="relative w-full h-80 sm:h-96"
+            onClick={onIronClick}
+          >
             <IronMan />
-          </div>
+          </button>
         </div>
       </div>
     </div>

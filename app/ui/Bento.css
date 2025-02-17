@@ -4,7 +4,7 @@
 
 .room {
   position: relative;
-  /* width: 100%; */
+  @apply sm:w-2/3 md:w-1/2 lg:w-auto;
   /* width: 50vw;
   height: 50vh; */
 }
@@ -37,6 +37,10 @@
   }
 }
 
+.floor {
+  width: 100%;
+}
+
 .wall {
   height: 100%;
   width: 100%;
@@ -66,5 +70,5 @@
 }
 
 .icon {
-  @apply text-4xl md:text-6xl;
+  @apply text-4xl lg:text-6xl;
 }

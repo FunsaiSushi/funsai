@@ -37,6 +37,7 @@ export const projectData = [
     description:
       "CS2BD is the ultimate platform for Counter Strike 2 players in Bangladesh!",
     link: "https://cs2bd.vercel.app",
+    github: "https://github.com/ImpiusVenatus/cs2",
   },
   {
     name: "pandaHR",
@@ -44,5 +45,6 @@ export const projectData = [
     img: "/projects/pandahr.png",
     description: "PandaHR is your very own HR management solution!",
     link: "https://pandahr.vercel.app",
+    github: "https://github.com/ImpiusVenatus/pandaHR-frontend",
   },
 ];

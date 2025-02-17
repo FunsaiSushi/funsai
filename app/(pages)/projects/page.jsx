@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="px-4 py-2 border hover:bg-[#FF0000] hover:border-[#FF0000] font-semibold"
+                  className="text-sm px-4 py-2 border hover:bg-[#FF0000] hover:border-[#FF0000] font-semibold"
                 >
                   Visit Website
                 </Link>
@@ -52,7 +52,7 @@ const ProjectsPage = () => {
                   <Link
                     href={project.github}
                     target="_blank"
-                    className="px-4 py-2 border hover:bg-[#FF0000] font-semibold"
+                    className="text-sm px-4 py-2 border hover:bg-[#FF0000] font-semibold"
                   >
                     View on GitHub
                   </Link>
