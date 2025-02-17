@@ -26,14 +26,14 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  border: 15px solid #ff0000; /* Thicker outer border */
+  border: 2px solid #ffffff; /* Thicker outer border */
 }
 
 .grid-stripe {
   flex-basis: 25%;
   height: 33.33%;
   box-sizing: border-box;
-  border: 5px solid #ff0000;
+  border: 1px solid #ffffff;
 }
 
 .left-door {

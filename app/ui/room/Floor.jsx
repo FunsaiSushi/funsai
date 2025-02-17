@@ -73,7 +73,7 @@ const Floor = ({ onCubeClick, secondLayout }) => {
                 secondLayout
                   ? "row-start-2 col-start-3 col-span-1 row-span-2 flex-col"
                   : "col-start-2 col-span-2 row-start-3"
-              } border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black lg:min-w-[120px]`}
+              } border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black lg:min-w-32`}
             >
               <Link
                 href="https://github.com/FunsaiSushi"
