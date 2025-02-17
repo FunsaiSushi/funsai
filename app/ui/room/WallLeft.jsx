@@ -9,16 +9,16 @@ const projects = [
     logo: "/projects/boopclub-logo.svg",
   },
   {
-    name: "storefren",
-    logo: "/projects/Storefren-icon.svg",
-  },
-  {
     name: "kreeshee",
     logo: "/projects/kreeshee.png",
   },
   {
-    name: "grassForGamers",
-    logo: "/projects/GrassforGamers.png",
+    name: "refun",
+    logo: "/projects/refun.png",
+  },
+  {
+    name: "storefren",
+    logo: "/projects/Storefren-icon.svg",
   },
 ];
 

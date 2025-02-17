@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { MdOutlineVolumeUp, MdOutlineVolumeMute } from "react-icons/md";
+import Equalizer from "./Equalizer";
 
 export default function BackgroundAudio({ isMuted, setIsMuted }) {
   const audioRef = useRef(null);
@@ -35,12 +36,16 @@ export default function BackgroundAudio({ isMuted, setIsMuted }) {
       </audio>
       <button
         onClick={toggleMute}
-        className="p-2 text-neutral-500 hover:text-[#FF0000] lg:text-white cursor-pointer border"
+        className="w-10 h-10 flex justify-center items-center text-neutral-500 hover:text-[#FF0000] lg:text-white cursor-pointer border"
       >
         {isMuted ? (
           <MdOutlineVolumeMute size={24} />
         ) : (
-          <MdOutlineVolumeUp size={24} />
+          <div class="equalizer">
+            <span class="eq1"></span>
+            <span class="eq2"></span>
+            <span class="eq3"></span>
+          </div>
         )}
       </button>
     </div>
