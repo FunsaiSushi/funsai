@@ -11,10 +11,10 @@ export default function Page() {
           <Bento />
         </div>
       </div>
-      {/* <VertexBackground
+      <VertexBackground
         className="absolute top-0 left-0 w-full h-full z-[-99]"
         color="rgba(255, 255, 255, 0.2)"
-      /> */}
+      />
     </div>
   );
 }
