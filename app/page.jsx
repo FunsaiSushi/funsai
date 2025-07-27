@@ -1,9 +1,6 @@
-import Link from "next/link";
-
-// import { IoLogoGithub } from "react-icons/io5";
-
 import Bento from "./ui/Bento";
 import Doors from "./ui/Doors";
+import VertexBackground from "./ui/VertexBackground";
 
 export default function Page() {
   return (
@@ -14,9 +11,10 @@ export default function Page() {
           <Bento />
         </div>
       </div>
-      {/* <div className="absolute bottom-4 left-0 bg-[#E6E6FA] p-2 rounded-xl">
-        Made with fun by <Link href="https://github.com/Muaz-Hasan">Muaz</Link>
-      </div> */}
+      {/* <VertexBackground
+        className="absolute top-0 left-0 w-full h-full z-[-99]"
+        color="rgba(255, 255, 255, 0.2)"
+      /> */}
     </div>
   );
 }

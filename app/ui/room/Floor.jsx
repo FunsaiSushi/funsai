@@ -41,9 +41,9 @@ const Floor = ({ onCubeClick, secondLayout }) => {
                 href="/about"
                 className={`${
                   secondLayout ? "blogtile" : ""
-                } w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8`}
+                } w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8 bg-black/50 backdrop-blur-sm`}
               >
-                about()
+                {"<About/>"}
               </Link>
             </motion.div>
 
@@ -57,10 +57,12 @@ const Floor = ({ onCubeClick, secondLayout }) => {
                 secondLayout
                   ? "col-start-2 row-start-1 col-span-2 row-span-1"
                   : "col-start-3 row-span-2"
-              } tile cursor-pointer w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8`}
+              } tile cursor-pointer w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8 bg-black/50 backdrop-blur-sm`}
               onClick={() => router.push("/blog")}
             >
-              <span className={secondLayout ? "" : "blogtile"}>blog()</span>
+              <span className={secondLayout ? "" : "blogtile"}>
+                {"<Blog/>"}
+              </span>
             </motion.div>
 
             {/* Socials */}
@@ -73,7 +75,7 @@ const Floor = ({ onCubeClick, secondLayout }) => {
                 secondLayout
                   ? "row-start-2 col-start-3 col-span-1 row-span-2 flex-col"
                   : "col-start-2 col-span-2 row-start-3"
-              } border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black lg:min-w-32`}
+              } border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black lg:min-w-32 bg-black/50 backdrop-blur-sm`}
             >
               <Link
                 href="https://github.com/FunsaiSushi"
@@ -111,10 +113,12 @@ const Floor = ({ onCubeClick, secondLayout }) => {
                 secondLayout
                   ? "row-start-3 col-span-2 row-span-1"
                   : "col-span-1 row-start-2 row-span-2"
-              } tile cursor-pointer w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8`}
+              } tile cursor-pointer w-full h-full flex justify-center items-center hover:underline hover:underline-offset-8 bg-black/50 backdrop-blur-sm`}
               onClick={() => router.push("/gallery")}
             >
-              <span className={secondLayout ? "" : "blogtile"}>gallery()</span>
+              <span className={secondLayout ? "" : "blogtile"}>
+                {"<Gallery/>"}
+              </span>
             </motion.div>
 
             {/* Cube */}
@@ -123,7 +127,7 @@ const Floor = ({ onCubeClick, secondLayout }) => {
               initial="hidden"
               animate="visible"
               custom={5}
-              className="relative w-full h-full col-start-2 row-start-2 tile flex justify-center items-center"
+              className="relative w-full h-full col-start-2 row-start-2 tile flex justify-center items-center bg-black/50 backdrop-blur-sm"
               onClick={onCubeClick}
             >
               <GrCube className="icon cube" />

@@ -5,19 +5,19 @@ import AnimatedNewLogo from "../AnimatedNewLogo";
 
 const projects = [
   {
-    name: "boopclub",
+    name: "BoopClub",
     logo: "/projects/boopclub-logo.svg",
   },
   {
-    name: "kreeshee",
+    name: "Kreeshee",
     logo: "/projects/kreeshee.png",
   },
   {
-    name: "refun",
+    name: "Refun",
     logo: "/projects/refun.png",
   },
   {
-    name: "storefren",
+    name: "Storefren",
     logo: "/projects/Storefren-icon.svg",
   },
 ];
@@ -29,22 +29,22 @@ const WallLeft = () => {
         <div className="wall-content">
           {/* Header */}
           <div className="border p-4 flex w-full lg:justify-between justify-center items-center">
-            <span>projects()</span>
+            <span>{"<Projects/>"}</span>
             <Link
               href="/projects"
               className="hidden lg:flex hover:underline hover:underline-offset-8 hover:text-[#ff0000]"
             >
-              seeAll()
+              {"<SeeAll/>"}
             </Link>
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-2 w-full h-full text-base">
+          <div className="grid grid-cols-2 w-full h-full text-base border-x border-b">
             {projects.map((project, index) => (
               <Link
                 key={project.name}
                 href={`/project/${project.name}`}
-                className="flex flex-col gap-2 items-center justify-center p-4 border hover:bg-black hover:text-[#ff0000] hover:underline hover:underline-offset-8"
+                className="flex flex-col gap-2 items-center justify-center p-4 hover:bg-black hover:text-[#ff0000] hover:underline hover:underline-offset-8 bg-black/50 backdrop-blur-sm"
               >
                 {index === 0 ? (
                   <AnimatedNewLogo size={50} />
@@ -57,7 +57,7 @@ const WallLeft = () => {
                     className="object-cover w-12 h-12"
                   />
                 )}
-                <div className="text-sm sm:text-base">{project.name}()</div>
+                <div className="text-sm sm:text-base">{`<${project.name}/>`}</div>
               </Link>
             ))}
           </div>
@@ -67,7 +67,7 @@ const WallLeft = () => {
             href="/projects"
             className="w-full flex justify-center border py-4 lg:hidden hover:underline hover:underline-offset-8 hover:text-red-500"
           >
-            seeAll()
+            {"<SeeAll/>"}
           </Link>
         </div>
       </div>

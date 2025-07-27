@@ -8,7 +8,7 @@
 }
 
 .animatedText span::before {
-  content: "heyThere:D()";
+  content: "Hey There :D";
   color: #ffffff;
   animation: words 20s infinite;
 }
@@ -33,23 +33,23 @@
 @keyframes words {
   0%,
   20% {
-    content: "heyThere:D()";
+    content: "Hey There :D";
   }
   21%,
   40% {
-    content: "itsFunsai^^()";
+    content: "It's Funsai^^";
   }
   41%,
   60% {
-    content: "gladToHaveYouHere<3()";
+    content: "Glad To Have You Here<3";
   }
   61%,
   80% {
-    content: "checkOutMyProjects*w*()";
+    content: "Check Out My Projects *w*";
   }
   81%,
   100% {
-    content: "andFeelFreeToReachOut^^()";
+    content: "Feel Free To Reach Out ^^";
   }
 }
 
