@@ -78,14 +78,6 @@ const Floor = ({ onCubeClick, secondLayout }) => {
               } border w-full h-full flex justify-center items-center gap-6 cursor-pointer hover:bg-black lg:min-w-32 bg-black/50 backdrop-blur-sm`}
             >
               <Link
-                href="https://github.com/FunsaiSushi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[#FF0000]"
-              >
-                <FaGithub className="icon" />
-              </Link>
-              <Link
                 href="https://twitter.com/FunsaiSushi"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -100,6 +92,14 @@ const Floor = ({ onCubeClick, secondLayout }) => {
                 className="hover:text-[#FF0000]"
               >
                 <IoLogoInstagram className="icon" />
+              </Link>
+              <Link
+                href="https://github.com/FunsaiSushi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#FF0000]"
+              >
+                <FaGithub className="icon" />
               </Link>
             </motion.div>
 

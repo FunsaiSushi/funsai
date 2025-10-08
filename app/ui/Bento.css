@@ -39,6 +39,8 @@
 
 .floor {
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .wall {
@@ -49,6 +51,11 @@
   transform-origin: 0 100%;
   @apply relative lg:absolute;
   /* backdrop-filter: blur(1px); */
+  pointer-events: none;
+}
+
+.wall > * {
+  pointer-events: auto;
 }
 
 .wall-content {
