@@ -20,7 +20,7 @@ const projects = [
     fullName: "Storefren",
     img: "/storefren.png",
     description: "Storefren is your friendly neighborhood store assistant!",
-    link: "https://storefren.vercel.app",
+    link: "https://storefren.com",
   },
   {
     name: "kreeshee",

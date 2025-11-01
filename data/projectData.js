@@ -45,7 +45,7 @@ export const projectData = [
     fullName: "Storefren",
     img: "/projects/storefren.png",
     description: "Storefren is your friendly neighborhood store assistant!",
-    link: "https://storefren.vercel.app",
+    link: "https://storefren.com",
   },
   {
     name: "grassforgamers",
